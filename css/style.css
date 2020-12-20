@@ -10,9 +10,9 @@
 @import url('../css/todolist-style.css');
 @import url('../css/weather-style.css');
 
-/* Light theme */
+/* Dark theme */
 :root {
-	--roboto: 'Roboto', sans-serif;
+    --roboto: 'Roboto', sans-serif;
 	--noto-sans: 'Noto Sans', sans-serif;
 	--open-sans: 'Open Sans', sans-serif;
 	--roboto-slab: 'Roboto Slab', serif;
@@ -20,48 +20,14 @@
 
 	--global-font: var(--open-sans);
 
-	--background: #fff;
-	--foreground: #7a8c70;
-	--header: #5C6657;
-	/*--card-bg: #d0f0c0;*/
-	--card-bg: #c1ecac;
+	--background: #1d2021;
+	--foreground: #1d2021;
+	--header: #1d2021;
+	--card-bg: #8ec07c;
 
-	--weather-fg: #C5CAE9;
-	--weather-bg: #5C6BC0;
-	--weather-icon: #E8EAF6;
-	--weather-temp: #C5CAE9;
-	--weather-description: #9FA8DA;
-	--weather-upd: #7986CB;
-	--weather-upd-hover: #E8EAF6;
-
-	--todo-bg: #f2e69d;
-	--todo-fg: #807a53;
-	--todo-hover: #4d4932;
-	--todo-input: #b3aa74;
-	--todo-done: #ccc085;
-
-	--search: #a6bf99;
-
-	--container-shadow-color: rgba(0, 0, 0, 0.35);
-}
-
-/* Dark theme */
-[theme="dark"] {
-	--background: #101112;
-	--foreground: #858585;
-	--header: #A8A8A8;
-	--card-bg: #1c1d1f;
-
-	--weather-fg: #BDBDBD;
-	--weather-bg: var(--card-bg);
-	--weather-icon: #E0E0E0;
-	--weather-temp: var(--weather-fg);
-	--weather-description: #9E9E9E;
-	--weather-upd: #757575;
-	--weather-upd-hover: #E0E0E0;
-	--todo-bg: var(--card-bg);
-	--todo-fg: #a6a6a6;
-	--todo-hover: #737373;
+	--todo-bg: #8ec07c;
+	--todo-fg: #1d2021;
+    --todo-hover: #1d2021;
 	--todo-input: #737373;
 	--todo-done: #474747;
 
@@ -211,10 +177,7 @@ input[id="searchbox"]:hover::placeholder {
 	transition: .2s;
 }
 
-.chb_theme + label::before {color: #BDBDBD;}
-
-.chb_theme + label:hover::before {color: #9E9E9E;}
-
-.chb_theme:checked + label::before {color: #FFD740;}
-
-.chb_theme:checked + label:hover::before {color: #bfa132;}
+.chb_theme + label::before {color: #fe8019;}
+.chb_theme + label:hover::before {color: #d65d0e;}
+.chb_theme:checked + label::before {color: #fadb2f;}
+.chb_theme:checked + label:hover::before {color: #d79921;}

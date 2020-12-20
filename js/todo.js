@@ -76,11 +76,7 @@ const list = document.querySelector('.js-todo-list');
 list.addEventListener('click', event => {
 	const itemKey = event.target.parentElement.dataset.key;
 	toggleDone(itemKey);
-  
-	if (event.target.classList.contains('fas')) {
-		const itemKey = event.target.parentElement.dataset.key;
-		deleteTodo(itemKey);
-	}
+    deleteTodo(itemKey);
 });
 
 document.addEventListener('DOMContentLoaded', () => {
